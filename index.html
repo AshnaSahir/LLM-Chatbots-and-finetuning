@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Dubai Assistant Chatbot</title>
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            font-size: small;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #ff578d;
+        }
+        input[type="text"] {
+            width: calc(100% - 110px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .message {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            font-family: 'Calibri', sans-serif;
+            white-space: pre-line; /* This will respect line breaks in the response */
+            line-height: 1.5; /* Add more spacing between lines */
+            text-align: justify; /* Justify the text */
+        }
+        .user-message {
+            text-align: left;
+            background-color: #c6e2ff; /* Very light grey box */
+        }
+        .bot-message {
+            text-align: left;
+            background-color: #c6ffcc; /* Very light grey box */
+        }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+    <script>
+        var socket = io.connect('http://' + document.domain + ':' + location.port);
+    
+        function sendMessage() {
+            var user_input = document.getElementById('user_input').value;
+            if (user_input.trim() !== '') {
+                socket.emit('send_message', {'message': user_input});
+                var userMessage = document.createElement('p');
+                var userTag = document.createElement('p');
+                userTag.style.fontWeight = 'bold';
+                userTag.textContent = "You: "
+                userMessage.textContent = user_input;
+                userMessage.className = 'message user-message';
+                document.getElementById('chat').appendChild(userTag);
+                document.getElementById('chat').appendChild(userMessage);
+                scrollToBottom();
+                document.getElementById('user_input').value = '';
+            }
+        }
+    
+        socket.on('receive_message', function(data) {
+            var botResponse = document.createElement('p');
+            var botTag = document.createElement('p');
+            botTag.style.fontWeight = 'bold';
+            botTag.textContent = "DubaiBot: "
+            botResponse.textContent = data.bot_message;
+            botResponse.className = 'message bot-message';
+            document.getElementById('chat').appendChild(botTag);
+            document.getElementById('chat').appendChild(botResponse);
+            scrollToBottom();
+        });
+        function scrollToBottom() {
+    var chatContainer = document.getElementById('chat');
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+}
+        document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('user_input').addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault(); // Prevent the default action of the Enter key
+            sendMessage();
+        }
+        });
+    });
+    </script>    
+</head>
+<body>
+    <!-- <div class="container">
+        <h1>Dubai Assistant Chatbot</h1>
+        <p>Ask me anything about moving to or living in Dubai!</p>
+        <form method="post">
+            <input type="text" name="user_input" placeholder="Enter your question here" required>
+            <input type="submit" value="Send">
+        </form>
+        <div class="response">{{ response }}</div>
+    </div> -->
+    <div class="container">
+        <h1>Dubai Assistant Chatbot</h1>
+        <p>Ask me anything about visiting or living in Dubai.</p>
+        <div id="chat"></div>
+        <input type="text" id="user_input" placeholder="Enter your question here" required>
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</body>
+</html>
