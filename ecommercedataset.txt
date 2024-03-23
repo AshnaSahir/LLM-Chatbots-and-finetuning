@@ -1,0 +1,89 @@
+User: Do you have any discounts on electronics?
+Bot: Yes, we currently have a 10% discount on selected electronics. Check out our deals section for more information.
+
+User: What's your return policy for clothes?
+Bot: Our return policy for clothes is 30 days from the purchase date, provided the items are unworn and in their original condition.
+
+User: How can I track my order?
+Bot: You can track your order by logging into your account and visiting the 'My Orders' section. You'll find the tracking information there.
+
+User: Can I change my delivery address after placing an order?
+Bot: Yes, you can change your delivery address within 24 hours of placing your order. Please contact our customer service team for assistance.
+
+User: Are there any shipping charges for international orders?
+Bot: Yes, shipping charges for international orders vary based on the destination and the weight of the package. You can find more details on our shipping policy page.
+
+User: What payment methods do you accept?
+Bot: We accept various payment methods including credit/debit cards, PayPal, and bank transfers.
+
+User: Is it safe to shop on your website?
+Bot: Absolutely! We use SSL encryption to ensure that your personal and payment information is secure.
+
+User: Do you offer gift wrapping services?
+Bot: Yes, we offer gift wrapping services for a small additional fee. You can select this option at checkout.
+
+User: Can I return a product if I don't like it?
+Bot: Yes, you can return a product within 30 days of receipt, provided it is in its original condition and packaging.
+
+User: How can I contact customer service?
+Bot: You can contact our customer service team via email at support@example.com or by phone at 1-800-123-4567.
+
+User: What are the latest trends in fashion on your site?
+Bot: Our latest fashion trends include sustainable clothing, bold prints, and minimalist accessories. Check out our 'Trending Now' section for the newest arrivals.
+
+User: How do I apply a promo code to my order?
+Bot: You can apply a promo code at checkout. Simply enter the code in the 'Promo Code' field and click 'Apply' to see the discount reflected in your total.
+
+User: Can I cancel my order after it has been shipped?
+Bot: Unfortunately, once an order has been shipped, it cannot be canceled. However, you can return the item for a refund once you receive it.
+
+User: Do you have a loyalty program?
+Bot: Yes, we have a loyalty program that rewards you with points for every purchase, which can be redeemed for discounts on future orders. Sign up on our website to start earning points.
+
+User: Are your products environmentally friendly?
+Bot: We are committed to sustainability and offer a range of environmentally friendly products. Look for the 'Eco-Friendly' label on our product pages.
+
+User: Do you offer same-day delivery?
+Bot: Yes, we offer same-day delivery for orders placed before 12 PM in select areas. Please check our delivery options at checkout for availability.
+
+User: How do I reset my account password?
+Bot: To reset your password, click on 'Forgot Password' on the login page and follow the instructions to set a new password.
+
+User: Can I buy a gift card for your store?
+Bot: Yes, you can purchase gift cards on our website. They are available in various denominations and make a perfect gift for any occasion.
+
+User: How do I know if a product is in stock?
+Bot: Product availability is displayed on each product page. If an item is out of stock, you can sign up for restock notifications.
+
+User: Do you offer international shipping?
+Bot: Yes, we ship internationally. Shipping costs and delivery times vary depending on the destination country.
+
+User: What is your policy on damaged or defective items?
+Bot: If you receive a damaged or defective item, please contact our customer service immediately for a replacement or refund.
+
+User: Can I place an order over the phone?
+Bot: Yes, you can place an order over the phone by contacting our customer service team. They will assist you with the ordering process.
+
+User: How often do you restock products?
+Bot: We restock products regularly, but the frequency depends on the item's demand and availability. You can sign up for restock notifications on product pages.
+
+User: Do you offer price matching?
+Bot: Currently, we do not offer price matching. However, we strive to provide competitive prices and regular promotions.
+
+User: Can I make changes to my order after it has been placed?
+Bot: You can make changes to your order within a few hours of placing it. Please contact our customer service team for assistance.
+
+User: How do I leave a review for a product I purchased?
+Bot: After purchasing a product, you can leave a review on the product page. Simply click 'Write a Review' and share your feedback.
+
+User: Do you have a size guide for clothing?
+Bot: Yes, we have a size guide available on each clothing product page to help you find the perfect fit.
+
+User: How can I subscribe to your newsletter?
+Bot: You can subscribe to our newsletter by entering your email address in the 'Subscribe' field at the bottom of our website.
+
+User: Do you offer discounts for bulk orders?
+Bot: Yes, we offer discounts for bulk orders. Please contact our customer service team for more information on bulk pricing.
+
+User: How can I find out about upcoming sales and promotions?
+Bot: You can stay updated on sales and promotions by subscribing to our newsletter and following us on social media.
